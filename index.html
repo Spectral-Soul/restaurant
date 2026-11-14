@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MS Biriyani — A Taste of Mother's Love · Cuddalore</title>
+<meta name="description" content="MS Biriyani, Imperial Road, Cuddalore — slow-dum biriyani, infused chicken, grill & BBQ, South Indian meals and the MS Party Hall. A taste of mother's love in every bite.">
+<meta name="theme-color" content="#17181c">
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Great+Vibes&family=Noto+Serif+Tamil:wght@500;700&family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ══════════ PRELOADER ══════════ -->
+<div id="preloader" aria-hidden="true">
+  <div class="pre-inner">
+    <div class="pre-plate">
+      <span class="steam s1"></span><span class="steam s2"></span><span class="steam s3"></span>
+      <span class="pre-ms">MS</span>
+    </div>
+    <div class="pre-name">BIRIYANI · CUDDALORE</div>
+    <div class="pre-bar"><i></i></div>
+  </div>
+</div>
+
+<div id="progress" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ══════════ NAV ══════════ -->
+<header id="nav">
+  <a class="brand" href="#home" aria-label="MS Biriyani — home">
+    <span class="brand-ms">MS</span>
+    <span class="brand-word">BIRIYANI<small>எம் எஸ் பிரியாணி</small></span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a class="nav-link" href="#story">Story</a>
+    <a class="nav-link" href="#menu">Menu</a>
+    <a class="nav-link" href="#gallery">Space</a>
+    <a class="nav-link" href="#hall">Party Hall</a>
+    <a class="nav-link" href="#visit">Visit</a>
+  </nav>
+  <div class="nav-right">
+    <a class="nav-call" href="#visit" aria-label="Contact MS Biriyani">
+      <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+      <span>Contact</span>
+    </a>
+    <button class="btn btn-gold btn-sm" data-book="table">Book a Table</button>
+    <button id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+</header>
+
+<!-- mobile menu -->
+<div id="mobileMenu" aria-hidden="true">
+  <nav class="m-links" aria-label="Mobile">
+    <a class="m-link" href="#home" style="--i:0">Home</a>
+    <a class="m-link" href="#story" style="--i:1">Our Story</a>
+    <a class="m-link" href="#menu" style="--i:2">Menu</a>
+    <a class="m-link" href="#gallery" style="--i:3">The Space</a>
+    <a class="m-link" href="#hall" style="--i:4">Party Hall</a>
+    <a class="m-link" href="#visit" style="--i:5">Visit Us</a>
+  </nav>
+  <div class="m-foot">
+    <a href="#visit" class="m-call">Contact</a>
+    <p>8, Imperial Rd, Sellankuppam, Cuddalore</p>
+  </div>
+</div>
+
+<main>
+<!-- ══════════ HERO ══════════ -->
+<section id="home" class="hero">
+  <canvas id="embers" aria-hidden="true"></canvas>
+  <div class="hero-cove" aria-hidden="true"></div>
+
+  <div class="hero-inner container">
+    <div class="hero-copy">
+      <p class="eyebrow hero-eyebrow"><span class="eyebrow-line"></span>Multi-Cuisine Restaurant · Cuddalore</p>
+      <h1 class="hero-title">
+        <span class="h1-script">MS</span>
+        <span class="h1-word" aria-label="Biriyani"><span style="--i:0">B</span><span style="--i:1">i</span><span style="--i:2">r</span><span style="--i:3">i</span><span style="--i:4">y</span><span style="--i:5">a</span><span style="--i:6">n</span><span style="--i:7">i</span></span>
+      </h1>
+      <p class="hero-tamil">எம் எஸ் பிரியாணி</p>
+      <p class="hero-tag">A taste of mother's love in every bite — slow-dum biriyani, flame grills and warm hospitality on Imperial Road.</p>
+      <div class="hero-ctas">
+        <a href="#menu" class="btn btn-gold">Explore the Menu
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <button class="btn btn-ghost" data-book="table">Book a Table</button>
+      </div>
+      <div class="hero-chips">
+        <span class="chip"><svg viewBox="0 0 24 24" width="12" height="12" fill="currentColor"><path d="M12 2l2.9 6.26L21.5 9.3l-4.75 4.4 1.15 6.8L12 17.3l-5.9 3.2 1.15-6.8L2.5 9.3l6.6-1.04z"/></svg>MS Party Hall upstairs</span>
+      </div>
+    </div>
+
+    <div class="hero-plate" aria-hidden="true">
+      <div class="plate-glow"></div>
+      <span class="steam hs1"></span><span class="steam hs2"></span><span class="steam hs3"></span>
+      <img class="plate-img" src="assets/img/biriyani.png" alt="" width="1024" height="1024" fetchpriority="high">
+      <svg class="plate-ring" viewBox="0 0 200 200">
+        <defs><path id="ringPath" d="M100,100 m-88,0 a88,88 0 1,1 176,0 a88,88 0 1,1 -176,0"/></defs>
+        <text><textPath href="#ringPath" textLength="552" lengthAdjust="spacingAndGlyphs">A TASTE OF MOTHER'S LOVE • IN EVERY BITE • MS BIRIYANI • CUDDALORE •</textPath></text>
+      </svg>
+      <div class="plate-badge">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3c1.5 2-1.5 3.5 0 5.5M8 5c1.2 1.6-1.2 2.8 0 4.4M16 5c1.2 1.6-1.2 2.8 0 4.4"/><path d="M4 13h16a8 8 0 0 1-16 0z"/><path d="M2 13h20"/></svg>
+        Dum-cooked daily
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-side" aria-hidden="true">IMPERIAL ROAD · SELLANKUPPAM · CUDDALORE</div>
+  <a class="hero-scroll" href="#story" aria-label="Scroll to our story"><span class="mouse"><i></i></span>Scroll</a>
+</section>
+
+<!-- ══════════ MARQUEE ══════════ -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Biriyani</span><i>✦</i><span>Meals</span><i>✦</i><span>Infused Chicken</span><i>✦</i><span>Grill</span><i>✦</i><span>BBQ</span><i>✦</i><span>Hot &amp; Cold Beverages</span><i>✦</i><span>Party Hall</span><i>✦</i>
+    <span>Biriyani</span><i>✦</i><span>Meals</span><i>✦</i><span>Infused Chicken</span><i>✦</i><span>Grill</span><i>✦</i><span>BBQ</span><i>✦</i><span>Hot &amp; Cold Beverages</span><i>✦</i><span>Party Hall</span><i>✦</i>
+  </div>
+</div>
+
+<!-- ══════════ STORY ══════════ -->
+<section id="story" class="story">
+  <div class="container story-grid">
+    <figure class="story-fig" data-reveal>
+      <div class="px-wrap story-px">
+        <img src="assets/img/facade.png" alt="MS Biriyani and MS Party Hall building on Imperial Road, Cuddalore" data-parallax="0.10" loading="lazy" width="960" height="960">
+      </div>
+      <figcaption class="fig-chip">
+        <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+        Imperial Road, Cuddalore
+      </figcaption>
+    </figure>
+    <div class="story-copy">
+      <p class="eyebrow" data-reveal><span class="eyebrow-line"></span>Our Story</p>
+      <h2 class="sec-title" data-reveal style="--i:1">Cooked slow.<br>Served with <em>love.</em></h2>
+      <p data-reveal style="--i:2">MS Biriyani began with a simple belief — food cooked with a mother's love tastes different. Every handi is layered with long-grain rice, house-ground masalas and saffron, sealed with dough and slow-cooked on dum until the aroma fills the room.</p>
+      <p data-reveal style="--i:3">Today our doors on Imperial Road open to families, friends and celebrations — from quick lunch meals to grand evenings in the MS Party Hall upstairs. The recipes haven't changed. Neither has the love.</p>
+      <p class="story-sign" data-reveal style="--i:4">— the MS family</p>
+      <div class="stats" data-reveal style="--i:5">
+        <div class="stat"><b><span data-count="40">0</span>+</b><span class="stat-label">dishes on the menu</span></div>
+        <div class="stat"><b><span data-count="100">0</span></b><span class="stat-label">seats in the party hall</span></div>
+        <div class="stat"><b><span data-count="2">0</span></b><span class="stat-label">floors — dine below, celebrate above</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ MENU ══════════ -->
+<section id="menu" class="menu">
+  <div class="container">
+    <div class="sec-head center">
+      <p class="eyebrow" data-reveal><span class="eyebrow-line"></span>The Menu<span class="eyebrow-line"></span></p>
+      <h2 class="sec-title" data-reveal style="--i:1">From our handi <em>to your table</em></h2>
+      <p class="sec-sub" data-reveal style="--i:2">Dum biriyani, hearty meals, infused chicken, live grills and coolers — something for every craving.</p>
+    </div>
+
+    <div class="sig-grid">
+      <button class="sig-card" data-cat="biriyani" data-reveal style="--i:0">
+        <span class="sig-img"><img src="assets/img/biriyani.png" alt="Chicken dum biriyani in a brass handi" loading="lazy"></span>
+        <span class="sig-body">
+          <span class="sig-name">Chicken Dum Biriyani</span>
+          <span class="sig-desc">The one that made our name.</span>
+          <span class="sig-cta">View dishes<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </span>
+      </button>
+      <button class="sig-card" data-cat="infused" data-reveal style="--i:1">
+        <span class="sig-img"><img src="assets/img/infused.png" alt="Herb-infused roasted golden chicken" loading="lazy"></span>
+        <span class="sig-body">
+          <span class="sig-name">Classic Infused Chicken</span>
+          <span class="sig-desc">Herb-marinated, roasted golden.</span>
+          <span class="sig-cta">View dishes<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </span>
+      </button>
+      <button class="sig-card" data-cat="grill" data-reveal style="--i:2">
+        <span class="sig-img"><img src="assets/img/grill.png" alt="BBQ and grill platter with tandoori chicken and tikka" loading="lazy"></span>
+        <span class="sig-body">
+          <span class="sig-name">Grill &amp; BBQ</span>
+          <span class="sig-desc">Charred, smoky, brushed with butter.</span>
+          <span class="sig-cta">View dishes<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </span>
+      </button>
+      <button class="sig-card" data-cat="meals" data-reveal style="--i:3">
+        <span class="sig-img"><img src="assets/img/meals.png" alt="South Indian full meals on a banana leaf" loading="lazy"></span>
+        <span class="sig-body">
+          <span class="sig-name">South Indian Meals</span>
+          <span class="sig-desc">A complete spread on banana leaf.</span>
+          <span class="sig-cta">View dishes<svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></span>
+        </span>
+      </button>
+    </div>
+
+    <div class="tabs-wrap" data-reveal>
+      <div id="tabs" role="tablist" aria-label="Menu categories">
+        <span id="tabInd" aria-hidden="true"></span>
+        <button class="tab active" data-cat="all" role="tab" aria-selected="true">All</button>
+        <button class="tab" data-cat="biriyani" role="tab" aria-selected="false">Biriyani</button>
+        <button class="tab" data-cat="meals" role="tab" aria-selected="false">Meals</button>
+        <button class="tab" data-cat="infused" role="tab" aria-selected="false">Infused Chicken</button>
+        <button class="tab" data-cat="grill" role="tab" aria-selected="false">Grill &amp; BBQ</button>
+        <button class="tab" data-cat="bev" role="tab" aria-selected="false">Beverages</button>
+      </div>
+    </div>
+
+    <div id="menuGrid" class="menu-grid" aria-live="polite"></div>
+    <p class="menu-note" data-reveal>Half / full portions on select dishes · items subject to availability</p>
+  </div>
+</section>
+
+<!-- ══════════ DUM CRAFT ══════════ -->
+<section id="craft" class="craft cove">
+  <div class="container">
+    <div class="sec-head center">
+      <p class="eyebrow gold" data-reveal><span class="eyebrow-line"></span>The Dum Craft<span class="eyebrow-line"></span></p>
+      <h2 class="sec-title light" data-reveal style="--i:1">Four steps. <em>No shortcuts.</em></h2>
+    </div>
+    <div class="steps">
+      <div class="step" data-reveal style="--i:0">
+        <span class="step-num">01</span>
+        <svg class="step-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 26h28a14 14 0 0 1-28 0z"/><path d="M6 26h36"/><path d="M24 22c-2-4 3-6 1-10"/><path d="M17 20c-1.5-3 2-4.5 1-7.5"/><path d="M31 20c-1.5-3 2-4.5 1-7.5"/></svg>
+        <h3>Marinate</h3>
+        <p>Yoghurt, house masalas and time — overnight, never rushed.</p>
+      </div>
+      <div class="step" data-reveal style="--i:1">
+        <span class="step-num">02</span>
+        <svg class="step-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 30l16 8 16-8"/><path d="M8 22l16 8 16-8"/><path d="M24 6l16 8-16 8-16-8z"/></svg>
+        <h3>Layer</h3>
+        <p>Par-boiled basmati, saffron milk, fried onions and mint, stacked by hand.</p>
+      </div>
+      <div class="step" data-reveal style="--i:2">
+        <span class="step-num">03</span>
+        <svg class="step-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 24h28v6a14 14 0 0 1-28 0z"/><path d="M8 24h32"/><path d="M14 20c0-6 4-10 10-10s10 4 10 10"/><path d="M24 10V6"/><path d="M20 6h8"/></svg>
+        <h3>Seal &amp; dum</h3>
+        <p>The handi is sealed with dough and rested over a slow flame.</p>
+      </div>
+      <div class="step" data-reveal style="--i:3">
+        <span class="step-num">04</span>
+        <svg class="step-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="24" cy="26" r="16"/><path d="M24 18v8l6 4"/><path d="M18 4h12"/></svg>
+        <h3>Rest &amp; serve</h3>
+        <p>Ten minutes of rest, then opened at your table, steaming.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ GALLERY ══════════ -->
+<section id="gallery" class="gallery">
+  <div class="container">
+    <div class="sec-head center">
+      <p class="eyebrow" data-reveal><span class="eyebrow-line"></span>The Space<span class="eyebrow-line"></span></p>
+      <h2 class="sec-title" data-reveal style="--i:1">Marble, warm light <em>&amp; jaali screens</em></h2>
+      <p class="sec-sub" data-reveal style="--i:2">Step inside before you visit — tap any photo to look closer.</p>
+    </div>
+    <div class="g-grid">
+      <figure class="g-item" data-cap="Our facade on Imperial Road" data-reveal style="--i:0" tabindex="0" role="button" aria-label="View photo: our facade on Imperial Road">
+        <img src="assets/img/facade.png" alt="MS Biriyani facade on Imperial Road" loading="lazy" width="956" height="960">
+        <figcaption>Our facade on Imperial Road</figcaption>
+      </figure>
+      <figure class="g-item" data-cap="Booths in warm cove light" data-reveal style="--i:1" tabindex="0" role="button" aria-label="View photo: booths in warm cove light">
+        <img src="assets/img/dining-1.jpg" alt="Marble tables and booth seating under warm cove lighting with Cuddalore wall art" loading="lazy" width="1432" height="2560">
+        <figcaption>Booths in warm cove light</figcaption>
+      </figure>
+      <figure class="g-item" data-cap="The dining aisle" data-reveal style="--i:2" tabindex="0" role="button" aria-label="View photo: the dining aisle">
+        <img src="assets/img/dining-2.jpg" alt="Dining aisle with jaali lattice partitions and marble tables" loading="lazy" width="1406" height="2560">
+        <figcaption>The dining aisle</figcaption>
+      </figure>
+      <figure class="g-item" data-cap="MS Party Hall, ready for a celebration" data-reveal style="--i:3" tabindex="0" role="button" aria-label="View photo: MS Party Hall">
+        <img src="assets/img/hall.jpg" alt="MS Party Hall arranged with covered chairs and balloon decor" loading="lazy" width="1430" height="2560">
+        <figcaption>MS Party Hall, ready to celebrate</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ PARTY HALL ══════════ -->
+<section id="hall" class="hall cove">
+  <div class="container hall-grid">
+    <figure class="hall-fig" data-reveal>
+      <div class="px-wrap hall-px">
+        <img src="assets/img/hall.jpg" alt="MS Party Hall with rows of covered chairs and balloon decorations" data-parallax="0.10" loading="lazy">
+      </div>
+      <figcaption class="hall-badge">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M5 21V7l7-4 7 4v14"/><path d="M9 21v-6h6v6"/></svg>
+        Upstairs · MS Party Hall
+      </figcaption>
+    </figure>
+    <div class="hall-copy">
+      <p class="eyebrow gold" data-reveal><span class="eyebrow-line"></span>Celebrations</p>
+      <h2 class="sec-title light" data-reveal style="--i:1">Your big day, <em>our big handi</em></h2>
+      <p class="hall-sub" data-reveal style="--i:2">Upstairs, a fully air-conditioned hall seats up to 100 guests — birthdays, weddings, engagements and corporate evenings, catered by the same kitchen you love.</p>
+      <ul class="hall-feats" data-reveal style="--i:3">
+        <li>Air-conditioned hall</li>
+        <li>Stage &amp; mood lighting</li>
+        <li>Decor on request</li>
+        <li>Catering by MS Biriyani</li>
+        <li>Seating for 100 guests</li>
+        <li>Easy access on Imperial Road</li>
+      </ul>
+      <div class="hall-ctas" data-reveal style="--i:4">
+        <button class="btn btn-gold" data-book="hall">Enquire for Your Event</button>
+        <a class="btn btn-ghost light" href="#visit">Contact</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ REVIEWS ══════════ -->
+<section id="reviews" class="reviews">
+  <div class="container">
+    <div class="sec-head center">
+      <p class="eyebrow" data-reveal><span class="eyebrow-line"></span>Word of Mouth<span class="eyebrow-line"></span></p>
+      <h2 class="sec-title" data-reveal style="--i:1">Loved around <em>Cuddalore</em></h2>
+    </div>
+    <div class="rev-carousel" data-reveal style="--i:2">
+      <div class="rev-slides">
+        <blockquote class="rev-slide active">
+          <div class="rev-stars" aria-label="5 out of 5 stars"></div>
+          <p>“The mutton biriyani here tastes like my grandmother's — fragrant, generous and never oily. We drive down from Chidambaram just for it.”</p>
+          <cite>Abdul R. · Chidambaram</cite>
+        </blockquote>
+        <blockquote class="rev-slide">
+          <div class="rev-stars" aria-label="5 out of 5 stars"></div>
+          <p>“Booked the party hall for my daughter's birthday. The team handled decor, food and timing without a single reminder. 100 guests, zero stress.”</p>
+          <cite>Kavitha S. · Cuddalore</cite>
+        </blockquote>
+        <blockquote class="rev-slide">
+          <div class="rev-stars" aria-label="5 out of 5 stars"></div>
+          <p>“Crisp grill, fluffy biriyani rice and filter coffee to finish. Our family's Sunday default for two years now.”</p>
+          <cite>Prakash M. · Sellankuppam</cite>
+        </blockquote>
+      </div>
+      <div class="rev-nav">
+        <button id="revPrev" class="rev-arrow" aria-label="Previous review"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M12 19l-7-7 7-7"/></svg></button>
+        <div class="rev-dots" role="tablist" aria-label="Reviews"></div>
+        <button id="revNext" class="rev-arrow" aria-label="Next review"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg></button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ VISIT ══════════ -->
+<section id="visit" class="visit">
+  <div class="container">
+    <div class="sec-head center">
+      <p class="eyebrow" data-reveal><span class="eyebrow-line"></span>Find Us<span class="eyebrow-line"></span></p>
+      <h2 class="sec-title" data-reveal style="--i:1">Imperial Road, <em>Cuddalore</em></h2>
+    </div>
+    <div class="visit-grid">
+      <div class="visit-card" data-reveal>
+        <div class="visit-cove" aria-hidden="true"></div>
+        <h3>MS Biriyani &amp; MS Party Hall</h3>
+        <address>8, Imperial Rd, E.B. Colony,<br>Sellankuppam, Cuddalore,<br>Tamil Nadu 607003</address>
+        <a class="visit-phone" href="#visit">Contact</a>
+        <div class="visit-hours">
+          <div><span>Web</span><b>www.msbiriyani.com</b></div>
+        </div>
+        <div class="visit-ctas">
+          <a class="btn btn-gold" href="#visit">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            Contact</a>
+          <a class="btn btn-ghost light" href="https://www.google.com/maps/dir/?api=1&destination=11.7299115%2C79.7645353" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l19-9-9 19-2-8z"/></svg>
+            Directions</a>
+        </div>
+      </div>
+      <div class="map-wrap" data-reveal style="--i:1">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3906.498191227921!2d79.76453529999999!3d11.7299115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a5498405021bc07%3A0x6b798759e5bbc7ea!2s8%2C%20Imperial%20Rd%2C%20E.B.Colony%2C%20Sellankuppam%2C%20Cuddalore%2C%20Tamil%20Nadu%20607003!5e0!3m2!1sen!2sin!4v1794632377600!5m2!1sen!2sin" title="MS Biriyani location on Google Maps — 8 Imperial Rd, Sellankuppam, Cuddalore" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ══════════ FOOTER ══════════ -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="f-brand">
+      <a class="brand" href="#home"><span class="brand-ms">MS</span><span class="brand-word">BIRIYANI<small>எம் எஸ் பிரியாணி</small></span></a>
+      <p>A taste of mother's love in every bite.</p>
+      <div class="f-social">
+        <a href="#visit" aria-label="Contact MS Biriyani"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+        <a href="https://www.google.com/maps/dir/?api=1&destination=11.7299115%2C79.7645353" target="_blank" rel="noopener" aria-label="Get directions"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg></a>
+      </div>
+    </div>
+    <div class="f-col">
+      <h4>Explore</h4>
+      <a href="#story">Our Story</a>
+      <a href="#menu">Menu</a>
+      <a href="#gallery">The Space</a>
+      <a href="#hall">Party Hall</a>
+      <a href="#visit">Visit Us</a>
+    </div>
+    <div class="f-col">
+      <h4>Reach Us</h4>
+      <p>8, Imperial Rd, E.B. Colony,<br>Sellankuppam, Cuddalore — 607003</p>
+      <a href="#visit">Contact</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© <span id="year">2026</span> MS Biriyani · GSTIN 33FGKPA2299N1ZE</span>
+    <span>Crafted with love in Cuddalore</span>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<!-- ══════════ BOOKING MODAL ══════════ -->
+<div id="bookingModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="bookTitle" aria-hidden="true">
+  <div class="modal-backdrop" data-close></div>
+  <div class="modal-panel">
+    <button class="modal-x" id="bookClose" aria-label="Close booking form">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+
+    <div id="bookFormView">
+      <p class="eyebrow"><span class="eyebrow-line"></span>Reservations</p>
+      <h3 id="bookTitle" class="modal-title">Book a table</h3>
+      <p class="modal-sub">Tell us when — we'll call you back to confirm.</p>
+      <form id="bookForm" novalidate>
+        <div class="f-row">
+          <div class="field" data-field="name">
+            <label for="bName">Your name</label>
+            <input id="bName" name="name" type="text" autocomplete="name" placeholder="e.g. Karthik R">
+            <span class="f-err">Please enter your name</span>
+          </div>
+          <div class="field" data-field="phone">
+            <label for="bPhone">Mobile number</label>
+            <input id="bPhone" name="phone" type="tel" inputmode="numeric" autocomplete="tel" placeholder="10-digit mobile" maxlength="14">
+            <span class="f-err">Enter a valid 10-digit mobile number</span>
+          </div>
+        </div>
+        <div class="f-row">
+          <div class="field" data-field="type">
+            <label for="bType">I'd like to</label>
+            <select id="bType" name="type">
+              <option value="table">Book a table</option>
+              <option value="hall">Enquire — Party Hall</option>
+            </select>
+          </div>
+          <div class="field" data-field="guests">
+            <label id="gLabel">Guests</label>
+            <div class="stepper">
+              <button type="button" id="gMinus" aria-label="Fewer guests">−</button>
+              <input id="bGuests" type="text" inputmode="numeric" value="2" readonly aria-labelledby="gLabel">
+              <button type="button" id="gPlus" aria-label="More guests">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="f-row">
+          <div class="field" data-field="date">
+            <label for="bDate">Date</label>
+            <input id="bDate" name="date" type="date">
+            <span class="f-err">Pick a date from today onwards</span>
+          </div>
+          <div class="field" data-field="time">
+            <label for="bTime">Time</label>
+            <select id="bTime" name="time"><option value="">Select a slot</option></select>
+            <span class="f-err">Pick a time slot</span>
+          </div>
+        </div>
+        <div class="field" data-field="notes">
+          <label for="bNotes">Anything special? <small>(optional)</small></label>
+          <textarea id="bNotes" name="notes" rows="2" placeholder="Birthday cake, high chair, window seats…"></textarea>
+        </div>
+        <button type="submit" class="btn btn-gold btn-block" id="bookSubmit">Request Booking</button>
+        <p class="modal-note">We'll call to confirm your booking.</p>
+      </form>
+    </div>
+
+    <div id="bookSuccess" hidden>
+      <svg class="success-check" viewBox="0 0 72 72" fill="none">
+        <circle class="sc-ring" cx="36" cy="36" r="32" stroke="currentColor" stroke-width="3"/>
+        <path class="sc-tick" d="M22 37l10 10 18-20" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <h3 class="modal-title">Request received!</h3>
+      <p class="success-line" id="sumLine"></p>
+      <p class="modal-sub" id="sumPhone"></p>
+      <div class="success-ctas">
+        <button class="btn btn-gold" id="bookDone">Done</button>
+        <a class="btn btn-ghost" href="#visit">Contact</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════ LIGHTBOX ══════════ -->
+<div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" aria-hidden="true">
+  <button id="lbClose" class="lb-x" aria-label="Close photo viewer"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg></button>
+  <button id="lbPrev" class="lb-arrow left" aria-label="Previous photo"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+  <figure class="lb-stage">
+    <img id="lbImg" src="" alt="">
+    <figcaption><span id="lbCap"></span><span id="lbCount"></span></figcaption>
+  </figure>
+  <button id="lbNext" class="lb-arrow right" aria-label="Next photo"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+</div>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
